@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Book Recommendation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+    href="{{url_for('static',filename='style.css')}}">
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Book Recommendation System</h1>
+    <p class="subtitle">
+        Discover your next favourite read.
+    </p>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="book_name"
+            placeholder="Enter a book name...(The Notebook, By the Light of the Moon,)"
+            required>
+
+        <button type="submit">
+            Recommend
+        </button>
+
+    </form>
+
+    <div class="books">
+
+        {% for book in recommendations %}
+
+        <div class="card">
+
+            <img src="{{ book.image }}" alt="{{ book.title }}">
+
+            <h3>{{ book.title }}</h3>
+
+            <p>{{ book.author }}</p>
+
+            <span>{{ book.publisher }}</span>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+    {% if not recommendations %}
+    <p class="empty-state">
+        Search for books
+    </p>
+    {% endif %}
+
+</div>
+
+</body>
+
+</html>
