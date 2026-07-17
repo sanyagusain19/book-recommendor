@@ -1,7 +1,9 @@
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity
+
 import pandas as pd
 import numpy as np
-books = pd.read_csv("archive/Books.csv", low_memory=False)
+books = pd.read_csv("famous_books.csv", low_memory=False)
 pt = pd.read_csv("filtered_data", index_col=0)
 similarity_score = cosine_similarity(pt)
 def recommend(book_name):
