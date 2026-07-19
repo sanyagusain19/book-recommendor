@@ -2,7 +2,7 @@
 
 A web application that recommends books based on user preferences and interests.
 
-## 📚 Overview
+##  Overview
 
 Book Recommendor is a smart recommendation system designed to help users discover new books tailored to their tastes. The application combines a user-friendly web interface with backend intelligence to provide personalized book suggestions.
 
@@ -15,7 +15,7 @@ Book Recommendor is a smart recommendation system designed to help users discove
   - Python: 24.4%
   - HTML: 20.2%
 
-## ✨ Features
+##  Features ✨
 
 - 📖 Personalized book recommendations
 - 🔍 Search and filter books
@@ -23,7 +23,7 @@ Book Recommendor is a smart recommendation system designed to help users discove
 - 👤 User profile management
 - 🎨 Responsive and intuitive UI
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -85,9 +85,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
